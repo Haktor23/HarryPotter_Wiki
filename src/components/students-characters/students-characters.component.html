@@ -1,1 +1,15 @@
-<p>students-characters works!</p>
+<app-header></app-header>
+
+@for (student of students; track $index) {
+<div>
+    <h2>Nombre: {{ student.name }}</h2>
+    <p>Casa: {{ student.house }}</p>
+    <p>Actor: {{student.actor}}</p>
+    <p>Fecha de nacimiento: {{student.dateOfBirth}}</p>
+    <div>
+
+        @if (student.image != "") {<img [src]="student.image" [alt]="student.name" class="img-character">}
+        @else {{{ student.name }} no dispone de imagen}
+    </div>
+</div>
+}

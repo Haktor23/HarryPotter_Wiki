@@ -1,1 +1,13 @@
-<p>staff-characters works!</p>
+<app-header></app-header>
+@for (staff of staffs; track $index) {
+<div>
+    <h2>Nombre: {{ staff.name }}</h2>
+    <p>Actor: {{staff.actor}}</p>
+    <p>Fecha de nacimiento: {{staff.dateOfBirth}}</p>
+    <div>
+
+        @if (staff.image != "") {<img [src]="staff.image" [alt]="staff.name" class="img-character">}
+        @else {{{ staff.name }} no dispone de imagen}
+    </div>
+</div>
+}

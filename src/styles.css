@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.img-character {
+    width: 230px;
+    height: 270px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px black;    
+}
+.sinimagen {
+    background-image: url("./assets/sinimagen.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 230px;
+    height: 270px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px black;   
+}

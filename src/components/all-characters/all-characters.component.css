@@ -1,4 +1,46 @@
-.img-character {
-    width: 230px;
-    height: 260px;
+@keyframes show {
+
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+
+.info-character {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 1% cover 70%;
+}
+
+.container{
+   
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-character{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: space-around;
+    width: 80%;
+    
+    
+    
 }

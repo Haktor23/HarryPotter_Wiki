@@ -1,1 +1,7 @@
-<p>all-spells works!</p>
+<app-header></app-header>
+@for (spell of spells; track $index) {
+<div class="spells-info">
+    <h2>Nombre: {{ spell.name }}</h2>
+    <h2>Description: {{spell.description}}</h2>
+</div>
+}

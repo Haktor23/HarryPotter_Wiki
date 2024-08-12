@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HpApiService } from '../../service/harrypotter-api.service';
+import { HeaderComponent } from "../header/header.component";
 
 
 @Component({
   selector: 'app-all-characters',
   standalone: true,
-  imports: [],
+  imports: [HeaderComponent],
   templateUrl: './all-characters.component.html',
   styleUrl: './all-characters.component.css'
 })

@@ -1,10 +1,22 @@
-<p>all-characters works!</p>
+<app-header></app-header>
+<div class="container">
 
 
-@for (character of characters; track $index) {
-<div>
-    <h2>Nombre: {{ character.name }}</h2>
-    <p>Casa: {{ character.house }}</p>
-    <div class=""><img [src]="character.image" [alt]="character.name" class="img-character"></div>
+    @for (character of characters; track $index) {
+    <div class="info-character">
+        <div class="textinfo-character">
+            <h2>Nombre: {{ character.name }}</h2>
+            <p>Casa: {{ character.house }}</p>
+            <p>Actor: {{character.actor}}</p>
+            <p>Fecha de nacimiento: {{character.dateOfBirth}}</p>
+        </div>
+        <div class="imginfo-character">
+
+            @if (character.image != "") {<img [src]="character.image" [alt]="character.name" class="img-character">}
+            @else { <div class="sinimagen"></div> }
+        </div>
+
+    </div>
+    }
+
 </div>
-}

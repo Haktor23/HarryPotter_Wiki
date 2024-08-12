@@ -3,6 +3,7 @@ import { AllCharactersComponent } from '../components/all-characters/all-charact
 import { AllSpellsComponent } from '../components/all-spells/all-spells.component';
 import { StaffCharactersComponent } from '../components/staff-characters/staff-characters.component';
 import { StudentsCharactersComponent } from '../components/students-characters/students-characters.component';
+import { AllHousesComponent } from '../components/all-houses/all-houses.component';
 
 export const routes: Routes = [
 
@@ -21,5 +22,9 @@ export const routes: Routes = [
     {
         path: 'students',
         component: StudentsCharactersComponent
+    },
+    {
+        path: 'house',
+        component: AllHousesComponent
     }
 ];

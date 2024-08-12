@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HpApiService } from '../../service/harrypotter-api.service';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-all-spells',
   standalone: true,
-  imports: [],
+  imports: [HeaderComponent],
   templateUrl: './all-spells.component.html',
   styleUrl: './all-spells.component.css'
 })

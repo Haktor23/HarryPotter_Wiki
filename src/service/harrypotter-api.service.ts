@@ -21,8 +21,11 @@ export class HpApiService {
     return this.http.get(`${this.apiUrl}/spells`);
   }
 
-  getTeachers(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/spells`);
+  getStaff(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/characters/staff`);
   }
 
+  getStudents(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/characters/students`);
+  }
 }
